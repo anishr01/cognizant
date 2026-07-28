@@ -1,0 +1,95 @@
+.page {
+  min-height: 100svh;
+  padding: 24px;
+  display: grid;
+  gap: 24px;
+  place-items: start;
+  background: #ffffff;
+}
+
+.events-panel,
+.converter-card {
+  width: min(760px, 100%);
+}
+
+.events-panel {
+  display: grid;
+  gap: 10px;
+}
+
+.counter {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #111827;
+}
+
+.button-stack {
+  display: grid;
+  gap: 4px;
+  width: fit-content;
+}
+
+.button-stack button,
+.converter-card button {
+  width: fit-content;
+  padding: 2px 8px;
+  border: 1px solid #9ca3af;
+  background: #f3f4f6;
+  color: #111827;
+  font: inherit;
+  cursor: pointer;
+}
+
+
+.converter-card {
+  display: grid;
+  gap: 12px;
+}
+
+.converter-card h2 {
+  margin: 0;
+  color: #15803d;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.converter-form {
+  display: grid;
+  gap: 6px;
+  width: fit-content;
+}
+
+.converter-form label {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.converter-form input {
+  width: 120px;
+  padding: 2px 4px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+}
+
+.converter-form button {
+  justify-self: center;
+  margin-top: 4px;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 16px;
+  }
+
+  .converter-form label {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .converter-form input {
+    width: 100%;
+  }
+}

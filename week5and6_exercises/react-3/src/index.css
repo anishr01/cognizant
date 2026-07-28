@@ -1,0 +1,64 @@
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 28px;
+  box-sizing: border-box;
+}
+
+.student-card {
+  text-align: center;
+}
+
+.student-card h1 {
+  margin: 0 0 26px;
+  font-size: 27px;
+  line-height: 1.2;
+  color: #b33a2c;
+  font-weight: 700;
+}
+
+.detail {
+  margin: 0 0 4px;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.detail span {
+  font-weight: 700;
+}
+
+.detail-name {
+  color: #2f55ff;
+}
+
+.detail-school {
+  color: #f04a73;
+}
+
+.detail-total {
+  color: #bf4cf0;
+}
+
+.detail-score {
+  color: #2b9f2d;
+}
