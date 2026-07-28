@@ -1,0 +1,102 @@
+.page {
+  min-height: 100svh;
+  padding: 40px 24px;
+  background: #ffffff;
+  color: #111111;
+}
+
+.hero {
+  width: min(1100px, 100%);
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #0f9d58;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.intro {
+  margin: 12px auto 0;
+  max-width: 760px;
+  color: #444;
+}
+
+.grid {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+}
+
+.panel {
+  min-height: 360px;
+  padding: 18px 28px;
+  box-sizing: border-box;
+}
+
+.panel h1 {
+  margin: 0 0 18px;
+  font-size: 1.4rem;
+}
+
+.panel + .panel {
+  border-left: 4px solid #159c16;
+}
+
+.content-list {
+  display: grid;
+  gap: 18px;
+}
+
+.detail-item h3,
+.detail-item h4,
+.detail-item p {
+  margin: 0;
+}
+
+.detail-item h3 {
+  font-size: 1.45rem;
+  margin-bottom: 10px;
+}
+
+.detail-item h4 {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.detail-item p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.panel-books .detail-item,
+.panel-courses .detail-item,
+.panel-blog .detail-item {
+  margin-bottom: 4px;
+}
+
+.empty-state {
+  color: #666;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .panel + .panel {
+    border-left: 0;
+    border-top: 4px solid #159c16;
+  }
+}
