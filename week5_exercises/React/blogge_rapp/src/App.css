@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.mystyle1 {
+  padding: 20px;
+  border-right: 4px solid green;
+  margin-right: 40px;
+}
+
+.st2 {
+  padding: 20px;
+  border-right: 4px solid green;
+  margin-right: 40px;
+}
+
+.v1 {
+  padding: 20px;
+}
